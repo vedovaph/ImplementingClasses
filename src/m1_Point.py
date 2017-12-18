@@ -103,7 +103,7 @@ class Point(object):
         That is, the x coordinate of the new Point is the average
         of the x coordinate of this Point and the x coordinate of p2,
         and likewise for the new Point's y coordinate"""
-        return Point(self.x + ((self.x + p2.x)/2), self.y + (self.y + p2.y)/2)
+        return Point(((self.x + p2.x)/2), (self.y + p2.y)/2)
 
 
 
@@ -1069,7 +1069,7 @@ def run_test_halfway_to():
 
     """
     # ------------------------------------------------------------------
-    # TODO: 13.  Follow the same instructions as in TODO 3 above,
+    # Done: 13.  Follow the same instructions as in Done 3 above,
     #    but for the  halfway_to  method specified above.
     # ------------------------------------------------------------------
     print()
